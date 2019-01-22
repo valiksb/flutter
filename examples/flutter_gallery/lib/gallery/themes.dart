@@ -3,6 +3,7 @@
 // found in the LICENSE file.
 
 import 'package:flutter/material.dart';
+import 'package:flutter_gallery/gallery/theme/theme.dart';
 
 class GalleryTheme {
   const GalleryTheme._(this.name, this.data);
@@ -12,7 +13,8 @@ class GalleryTheme {
 }
 
 final GalleryTheme kDarkGalleryTheme = GalleryTheme._('Dark', _buildDarkTheme());
-final GalleryTheme kLightGalleryTheme = GalleryTheme._('Light', _buildLightTheme());
+// final GalleryTheme kLightGalleryTheme = GalleryTheme._('Light', _buildLightTheme());
+final GalleryTheme kLightGalleryTheme = GalleryTheme._('Light', lightTheme);
 
 TextTheme _buildTextTheme(TextTheme base) {
   return base.copyWith(
